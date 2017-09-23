@@ -36,6 +36,7 @@ module Mail
     TOKEN_UNSAFE  = /[#{Regexp.quote tspecial}#{control}#{sp}]/n
     ENCODED_VALUE = /\=\?([^?]+)\?([QB])\?[^?]*?\?\=/mi
     FULL_ENCODED_VALUE = /(\=\?[^?]+\?[QB]\?[^?]*?\?\=)/mi
+    BLANK_REGEX = /\A[[:space:]]*\z/
 
     EMPTY          = ''
     SPACE          = ' '
